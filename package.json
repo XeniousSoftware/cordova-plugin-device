@@ -1,6 +1,6 @@
 {
   "name": "xenious-cordova-plugin-device",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Device Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
