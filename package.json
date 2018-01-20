@@ -6,16 +6,8 @@
   "cordova": {
     "id": "cordova-plugin-device",
     "platforms": [
-      "firefoxos",
-      "tizen",
       "android",
-      "amazon-fireos",
-      "ubuntu",
       "ios",
-      "blackberry10",
-      "wp7",
-      "wp8",
-      "windows8",
       "windows",
       "browser",
       "osx"
@@ -25,38 +17,39 @@
     "type": "git",
     "url": "https://github.com/XeniousSoftware/cordova-plugin-device"
   },
+  "bugs": {
+    "url": "https://issues.apache.org/jira/browse/CB"
+  },
   "keywords": [
     "cordova",
     "device",
     "ecosystem:cordova",
-    "cordova-firefoxos",
-    "cordova-tizen",
     "cordova-android",
-    "cordova-amazon-fireos",
-    "cordova-ubuntu",
     "cordova-ios",
-    "cordova-blackberry10",
-    "cordova-wp7",
-    "cordova-wp8",
-    "cordova-windows8",
     "cordova-windows",
     "cordova-browser",
     "cordova-osx"
   ],
   "scripts": {
-    "test": "npm run jshint",
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
+    "test": "npm run eslint",
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests"
   },
   "author": "Apache Software Foundation",
   "license": "Apache-2.0",
   "engines": {
     "cordovaDependencies": {
-      "2.0.0": {
+      "3.0.0": {
         "cordova": ">100"
       }
     }
   },
   "devDependencies": {
-    "jshint": "^2.6.0"
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
